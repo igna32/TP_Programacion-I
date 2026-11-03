@@ -1,9 +1,5 @@
-
 from modulos.funciones import es_un_numero, validar_rango
-from modulos.tablas import crear_tabla
-
-
-
+from modulos.tablas import crear_tabla, modificar_tablas
 
 
 def ejecutar_menu_principal() -> bool:
@@ -19,6 +15,7 @@ def ejecutar_menu_principal() -> bool:
         print("3. Variables")
         print("4. Mostrar")
         print("5. Estadística")
+        print("6. Validaciones")
         print("7. Cerrar sesión")
         print("//////////////////////////")
 
@@ -47,7 +44,7 @@ def ejecutar_menu_principal() -> bool:
 
         elif opcion_menu == 3:
 
-            print("Bienvenido a variables")
+            modificar_tablas(tablas_creadas)
 
         elif opcion_menu == 4:
 
@@ -88,7 +85,6 @@ def ejecutar_menu_principal() -> bool:
         elif opcion_menu == 6:
 
             pass
-
 
         elif opcion_menu == 7:
 
