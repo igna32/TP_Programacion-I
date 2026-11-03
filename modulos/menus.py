@@ -1,5 +1,5 @@
 from modulos.funciones import es_un_numero, validar_rango
-from modulos.tablas import crear_tabla, modificar_tablas
+from modulos.tablas import crear_tabla, modificar_tablas, mostrar_tablas
 
 
 def ejecutar_menu_principal() -> bool:
@@ -48,35 +48,7 @@ def ejecutar_menu_principal() -> bool:
 
         elif opcion_menu == 4:
 
-            if len(tablas_creadas) == 0:
-                print("Todavía no hay tablas creadas.")
-
-            else:
-
-                for i in range(len(tablas_creadas)):
-
-                    tabla_actual = tablas_creadas[i]
-                    nombre = tabla_actual[0]
-                    columnas = tabla_actual[1]
-                    matriz = tabla_actual[2]
-
-                    print(f"\nTabla: {nombre}")
-
-                    linea_columnas = ""
-                    for k in range(len(columnas)):
-                        linea_columnas += str(columnas[k])
-                        if k < len(columnas) - 1:
-                            linea_columnas += " | "
-                    print(linea_columnas)
-
-                    for j in range(len(matriz)):
-                        linea_fila = ""
-                        fila = matriz[j]
-                        for k in range(len(fila)):
-                            linea_fila += str(fila[k])
-                            if k < len(fila) - 1:
-                                linea_fila += " | "
-                        print(linea_fila)
+            mostrar_tablas(tablas_creadas)
 
         elif opcion_menu == 5:
 

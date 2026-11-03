@@ -104,6 +104,15 @@ def es_un_numero(cadena: str) -> bool:
     return respuesta
 
 
+
+
+
+
+
+
+
+
+
 """
 
 def validaciones():
