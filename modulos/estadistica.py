@@ -88,7 +88,6 @@ def calcular_estadisticas(tablas_creadas: list):
                 for k in range(len(valores_unicos)):
                     print(f"    - Valor {valores_unicos[k]}: aparece {conteo_frecuencias[k]} vez/veces")
 
-                # B. MÁXIMOS Y MÍNIMOS (Búsqueda manual sin max() ni min())
                 val_max = valores[0]
                 val_min = valores[0]
 
