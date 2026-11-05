@@ -56,10 +56,6 @@ def ejecutar_menu_principal() -> bool:
 
         elif opcion_menu == 6:
 
-            pass
-
-        elif opcion_menu == 7:
-
             print("Sesión cerrada con éxito.")
             sesion = False
 
