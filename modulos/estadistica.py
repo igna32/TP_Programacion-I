@@ -65,7 +65,6 @@ def calcular_estadisticas(tablas_creadas: list):
                 print(f"      REPORTE ESTADÍSTICO: {columnas[k_col]}")
                 print("=============================================")
 
-                # A. CONTEO TOTAL Y FRECUENCIAS (Sin diccionarios)
                 print(f"• Conteo total de datos (n): {n}")
 
                 valores_unicos = []
