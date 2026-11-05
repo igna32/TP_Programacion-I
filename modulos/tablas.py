@@ -11,7 +11,6 @@ def crear_tabla() -> list:
         print("El nombre no puede estar vacío.")
         nombre_tabla = input("Ingrese el nombre de la tabla: ")
 
-    # Validación de cantidad de columnas con bandera
     cant_col_valida = False
     while cant_col_valida == False:
         cant_col_str = input("Ingrese la cantidad de columnas: ")
@@ -33,7 +32,6 @@ def crear_tabla() -> list:
 
         columnas += [nombre_col]
 
-    # Validación de cantidad de filas con bandera
     cant_filas_valida = False
     while cant_filas_valida == False:
         cant_filas_str = input("Ingrese la cantidad de filas a cargar: ")
@@ -134,7 +132,6 @@ def modificar_tablas(tablas_creadas: list):
             print(f"\nModificando la tabla: {tabla_seleccionada[0]}")
             print(f"La tabla tiene {len(matriz)} fila(s).")
 
-            # 2. Selección de Fila (j)
             fila_valida = False
             while fila_valida == False:
                 entrada_fila = input(f"Seleccione el número de fila a modificar (1 a {len(matriz)}): ")

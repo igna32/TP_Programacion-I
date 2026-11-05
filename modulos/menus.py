@@ -1,6 +1,6 @@
 from modulos.funciones import es_un_numero, validar_rango
 from modulos.tablas import crear_tabla, modificar_tablas, mostrar_tablas
-
+from modulos.estadistica import calcular_estadisticas
 
 def ejecutar_menu_principal() -> bool:
 
@@ -15,8 +15,7 @@ def ejecutar_menu_principal() -> bool:
         print("3. Variables")
         print("4. Mostrar")
         print("5. Estadística")
-        print("6. Validaciones")
-        print("7. Cerrar sesión")
+        print("6. Cerrar sesión")
         print("//////////////////////////")
 
         entrada_menu = input("Seleccione una opción del menú: ")
@@ -52,7 +51,7 @@ def ejecutar_menu_principal() -> bool:
 
         elif opcion_menu == 5:
 
-            print("Bienvenido a estadística")
+            calcular_estadisticas(tablas_creadas)
 
         elif opcion_menu == 6:
 
